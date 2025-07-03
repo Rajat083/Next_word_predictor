@@ -2,7 +2,7 @@
 
 A simple yet effective deep learning-based **Next Word Prediction** model built using LSTM in Keras. It learns from a custom text corpus and predicts the most likely next word(s) given a sentence prefix.
 
-![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.10+-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![NLP](https://img.shields.io/badge/Topic-NLP-orange.svg)
 
@@ -45,7 +45,7 @@ next-word-predictor/
 
 ## 🏁 Getting Started
 
-#🔧 Installation
+🔧 Installation
 
 1. Clone the repository:
 ```bash
@@ -73,7 +73,7 @@ You: {your_sentence}
 → Prediction: {your_sentence + next 5 predicted words}
 ```
 
-###🛠️ Model Details
+##🛠️ Model Details
 Tokenizer: Top 5000 words, OOV token enabled
 
 Model:
