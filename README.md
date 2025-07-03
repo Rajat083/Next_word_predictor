@@ -1,6 +1,6 @@
 # 🔮 Next Word Predictor
 
-A simple yet effective machine learning model that predicts the next word based on a given input text. Ideal for learning NLP basics, language modeling, and building autocomplete systems.
+A simple yet effective deep learning-based **Next Word Prediction** model built using LSTM in Keras. It learns from a custom text corpus and predicts the most likely next word(s) given a sentence prefix.
 
 ![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)
 ![License](https://img.shields.io/badge/License-MIT-green.svg)
@@ -20,10 +20,9 @@ A simple yet effective machine learning model that predicts the next word based 
 
 ## 🧠 Technologies Used
 
-- Python 3.8+
-- TensorFlow / Keras
+- Python 3.10+
+- TensorFlow / Keras 2.14.0
 - NumPy
-- NLTK / spaCy (for tokenization, optional)
 - Jupyter Notebook (for experiments)
 
 ---
@@ -53,8 +52,49 @@ next-word-predictor/
 git clone https://github.com/Rajat083/Next_word_predictor.git
 cd next-word-predictor
 ```
-2. Install Dependencies
+2. Create a virtual environment:
+   ```bash
+   python -m venv venv
+   source venv/bin/activate   # or venv\\Scripts\\activate on Windowsll -r requirements.txt
+    ```
+3. Install Dependencies
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+### Usage
+Run the script
 ```bash
-pip install -r requirements.txt
+python predictor.py
+```
+Enter a sentence
+```
+You: {your_sentence}
+→ Prediction: {your_sentence + next 5 predicted words}
 ```
 
+###🛠️ Model Details
+Tokenizer: Top 5000 words, OOV token enabled
+
+Model:
+
+Embedding Layer
+
+LSTM (128 units)
+
+Dense output with softmax
+
+Input Format: Padded n-gram sequences (using utils.create_ngrams)
+
+Trained with: Categorical crossentropy, Adam optimizer
+
+##Training is done inside the notebook:
+```
+next_word_predictor.ipynb
+```
+📚 Requirements
+TensorFlow == 2.14
+
+NumPy < 2
+
+Keras (if standalone)
