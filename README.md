@@ -45,7 +45,7 @@ next-word-predictor/
 
 ## 🏁 Getting Started
 
-### 🔧 Installation
+#🔧 Installation
 
 1. Clone the repository:
 ```bash
@@ -62,7 +62,7 @@ cd next-word-predictor
    pip install -r requirements.txt
    ```
 
-### Usage
+# Usage
 Run the script
 ```bash
 python predictor.py
