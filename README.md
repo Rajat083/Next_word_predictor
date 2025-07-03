@@ -52,6 +52,9 @@ next-word-predictor/
 ```bash
 git clone https://github.com/Rajat083/Next_word_predictor.git
 cd next-word-predictor
-
+```
+2. Install DEpendencies
+```bash
 pip install -r requirements.txt
+```
 
