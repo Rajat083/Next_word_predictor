@@ -31,12 +31,12 @@ A simple yet effective machine learning model that predicts the next word based 
 ## 📁 Project Structure
 
 next-word-predictor/
-├── data/
-│ └── corpus.txt
-├── model/
-│ └── next_word_model.h5
+├── Datasets/
+│ └── data.txt
+├── Model/
+│ └── glove6B100D_lstm.h5
+| └── tokenizer.pkl
 ├── predictor.py
-├── train.py
 ├── utils.py
 ├── requirements.txt
 └── README.md
@@ -53,7 +53,7 @@ next-word-predictor/
 git clone https://github.com/Rajat083/Next_word_predictor.git
 cd next-word-predictor
 ```
-2. Install DEpendencies
+2. Install Dependencies
 ```bash
 pip install -r requirements.txt
 ```
