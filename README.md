@@ -73,7 +73,7 @@ You: {your_sentence}
 → Prediction: {your_sentence + next 5 predicted words}
 ```
 
-##🛠️ Model Details
+## 🛠️ Model Details
 Tokenizer: Top 5000 words, OOV token enabled
 
 Model:
@@ -92,7 +92,7 @@ Trained with: Categorical crossentropy, Adam optimizer
 ```
 next_word_predictor.ipynb
 ```
-📚 Requirements
+## 📚 Requirements
 TensorFlow == 2.14
 
 NumPy < 2
