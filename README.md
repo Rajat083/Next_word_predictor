@@ -27,21 +27,6 @@ A simple yet effective deep learning-based **Next Word Prediction** model built 
 
 ---
 
-## 📁 Project Structure
-
-next-word-predictor/
-├── Datasets/
-│ └── data.txt
-├── Model/
-│ └── glove6B100D_lstm.h5
-| └── tokenizer.pkl
-├── predictor.py
-├── utils.py
-├── requirements.txt
-└── README.md
-
-
----
 
 ## 🏁 Getting Started
 
